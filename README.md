@@ -1,32 +1,17 @@
-# Ambiance QR Menu - Version 1
+# Ambiance QR Menu V3
 
-A simple mobile-first digital menu prototype for the Ambiance restaurant.
+Restaurant-style mobile QR menu prototype.
 
-## What is included
-
-- Mobile-first digital menu
-- Restaurant branding/logo
-- Recommended section at the top
-- Simple category navigation
-- Menu items and prices transcribed from the supplied menu photos
-- No login
-- No ordering
-- No payment
-- No database
-
-## Run locally
-
-Open `index.html` in a browser.
+Live URL:
+https://thechetanmishra.github.io/ambiance-qr-menu/
 
 ## GitHub Pages
+Use:
+- Branch: main
+- Folder: / (root)
 
-1. Create a GitHub repository.
-2. Upload all files from this folder.
-3. Enable GitHub Pages from repository Settings > Pages.
-4. Select the main branch and root folder.
-5. GitHub will provide a public URL.
-6. Replace the temporary QR target in `assets/qr-code.png` with the real URL and regenerate the QR.
+## QR
+`assets/qr-code.png` points to the live URL above.
 
-## Important
-
-The three recommendations are sample selections for the prototype. The restaurant owner should decide which dishes are actually Best Sellers / Chef Specials.
+## Notes
+The Recommended section is sample data. In a future version it should be editable by the restaurant owner.

@@ -1,76 +1,259 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ambiance | Digital Menu</title>
-  <meta name="description" content="Ambiance restaurant digital menu">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07585a">
+<title>Ambiance Restaurant | Menu</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <img class="logo" src="assets/logo.jpg" alt="Ambiance">
-      <p class="tagline">Digital Menu</p>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <img src="assets/logo.jpg" alt="Ambiance Restaurant" class="logo">
+    <p>GOOD FOOD • GOOD MOOD</p>
+  </div>
+</header>
+
+<main class="page">
+
+<section class="welcome">
+  <span>WELCOME TO AMBIANCE</span>
+  <h1>What are you in the mood for?</h1>
+  <p>Explore our menu or start with our restaurant favourites.</p>
+</section>
+
+<section class="recommendations card">
+  <div class="section-title">
+    <div>
+      <small>CHEF'S PICKS & CUSTOMER FAVOURITES</small>
+      <h2>⭐ Recommended for You</h2>
     </div>
-  </header>
+  </div>
 
-  <main class="container">
-    <section class="welcome">
-      <h1>What would you like today?</h1>
-      <p>Explore our menu and ask our team for today's availability.</p>
-    </section>
-
-    <section class="recommendations" aria-labelledby="recommendations-title">
-      <div class="section-heading">
-        <span class="eyebrow">Restaurant picks</span>
-        <h2 id="recommendations-title">⭐ Recommended</h2>
+  <div class="recommend-grid">
+    <article class="recommend-card">
+      <img src="assets/thali.jpg" alt="Thali">
+      <div class="recommend-body">
+        <span class="badge best">BEST SELLER</span>
+        <h3>A9 Special Non-Veg Thali</h3>
+        <p>Our signature thali</p>
+        <strong>₹250</strong>
       </div>
+    </article>
 
-      <div class="recommendation-grid">
-        <article class="recommendation-card">
-          <div class="badge">⭐ Special</div>
-          <h3>A9 Special Non-veg Thali</h3>
-          <p>Our signature non-veg thali</p>
-          <strong>₹250</strong>
-        </article>
-        <article class="recommendation-card">
-          <div class="badge">🔥 Popular</div>
-          <h3>Chicken Biryani</h3>
-          <p>A classic favourite</p>
-          <strong>₹160</strong>
-        </article>
-        <article class="recommendation-card">
-          <div class="badge">👨‍🍳 Try this</div>
-          <h3>Paneer Tikka Masala</h3>
-          <p>Rich and flavourful</p>
-          <strong>₹250</strong>
-        </article>
+    <article class="recommend-card">
+      <img src="assets/breads-rice.jpg" alt="Biryani">
+      <div class="recommend-body">
+        <span class="badge chef">CHEF'S SPECIAL</span>
+        <h3>Chicken Biriyani</h3>
+        <p>A classic favourite</p>
+        <strong>₹160</strong>
       </div>
-      <p class="sample-note">Recommendation badges are sample data for this prototype and can be changed by the restaurant.</p>
-    </section>
+    </article>
 
-    <nav class="category-nav" aria-label="Menu categories">
-      <button data-target="thali">Thali</button>
-      <button data-target="starters">Starters</button>
-      <button data-target="soups">Soups & Chilly</button>
-      <button data-target="main-veg">Main Course Veg</button>
-      <button data-target="main-nonveg">Main Course Non-Veg</button>
-      <button data-target="noodles">Noodles</button>
-      <button data-target="tandoor">Tandoor</button>
-      <button data-target="breads">Breads</button>
-      <button data-target="rice">Rice & Biryani</button>
-      <button data-target="beverages">Beverages</button>
-    </nav>
+    <article class="recommend-card">
+      <img src="assets/main-course.jpg" alt="Paneer">
+      <div class="recommend-body">
+        <span class="badge best">BEST SELLER</span>
+        <h3>Paneer Tikka Masala</h3>
+        <p>Rich and flavourful</p>
+        <strong>₹250</strong>
+      </div>
+    </article>
+  </div>
+</section>
 
-    <div id="menu"></div>
+<section class="explore">
+  <div class="section-title">
+    <small>EXPLORE OUR MENU</small>
+    <h2>Choose a Category</h2>
+  </div>
+  <div class="category-grid">
+    <button data-target="thali"><img src="assets/thali.jpg"><span>Indian Thali</span></button>
+    <button data-target="starters"><img src="assets/starters.jpg"><span>Starters</span></button>
+    <button data-target="main-course"><img src="assets/main-course.jpg"><span>Main Course</span></button>
+    <button data-target="tandoor"><img src="assets/tandoor.jpg"><span>Tandoor</span></button>
+    <button data-target="rice"><img src="assets/breads-rice.jpg"><span>Rice & Biriyani</span></button>
+    <button data-target="beverages"><img src="assets/beverages.jpg"><span>Beverages</span></button>
+  </div>
+</section>
 
-    <section class="footer-card">
-      <h2>Need help choosing?</h2>
-      <p>Ask our team for today's recommendation.</p>
-    </section>
-  </main>
+<section class="menu card" id="thali">
+  <div class="menu-heading"><small>OUR MENU</small><h2>Indian Thali</h2></div>
+  <div class="items">
+    <div><span>Veg Thali <i class="veg"></i></span><b>₹120</b></div>
+    <div><span>Chicken Thali <i class="nonveg"></i></span><b>₹170</b></div>
+    <div><span>Desi Chicken Thali <i class="nonveg"></i></span><b>₹220</b></div>
+    <div><span>Mutton Thali <i class="nonveg"></i></span><b>₹230</b></div>
+    <div><span>Paneer Thali <i class="veg"></i></span><b>₹180</b></div>
+    <div><span>Mushroom Thali <i class="veg"></i></span><b>₹180</b></div>
+    <div><span>Fish Thali <i class="nonveg"></i></span><b>₹160</b></div>
+    <div><span>A9 Special Veg Thali <i class="veg"></i></span><b>₹200</b></div>
+    <div><span>A9 Special Non-Veg Thali <i class="nonveg"></i></span><b>₹250</b></div>
+  </div>
+</section>
 
-  <script src="app.js"></script>
+<section class="menu card" id="starters">
+  <div class="menu-heading"><small>FROM THE KITCHEN</small><h2>Starters</h2></div>
+  <h3 class="subheading">Veg Starters</h3>
+  <div class="items">
+    <div><span>Dry Papad <i class="veg"></i></span><b>₹15</b></div>
+    <div><span>Fried Papad <i class="veg"></i></span><b>₹20</b></div>
+    <div><span>Masala Papad <i class="veg"></i></span><b>₹40</b></div>
+    <div><span>Green Salad <i class="veg"></i></span><b>₹40</b></div>
+    <div><span>Onion Salad <i class="veg"></i></span><b>₹20</b></div>
+    <div><span>Finger Chips <i class="veg"></i></span><b>₹100</b></div>
+    <div><span>Paneer Finger <i class="veg"></i></span><b>₹150</b></div>
+    <div><span>Paneer Pakoda <i class="veg"></i></span><b>₹150</b></div>
+    <div><span>Paneer Salt & Pepper <i class="veg"></i></span><b>₹150</b></div>
+    <div><span>Paneer Crispy <i class="veg"></i></span><b>₹200</b></div>
+    <div><span>Paneer Manchurian <i class="veg"></i></span><b>₹170</b></div>
+    <div><span>Chana Roast <i class="veg"></i></span><b>₹120</b></div>
+    <div><span>American Corn <i class="veg"></i></span><b>₹120</b></div>
+    <div><span>Veg Bullet <i class="veg"></i></span><b>₹180</b></div>
+    <div><span>Veg Crispy <i class="veg"></i></span><b>₹120</b></div>
+    <div><span>Veg Hara Bhara Kabab <i class="veg"></i></span><b>₹150</b></div>
+    <div><span>Veg Manchurian <i class="veg"></i></span><b>₹100</b></div>
+    <div><span>Paneer 65 <i class="veg"></i></span><b>₹170</b></div>
+  </div>
+  <h3 class="subheading">Non-Veg Starters</h3>
+  <div class="items">
+    <div><span>Chicken Pakoda <i class="nonveg"></i></span><b>₹160</b></div>
+    <div><span>Chicken Pakoda Boneless <i class="nonveg"></i></span><b>₹180</b></div>
+    <div><span>Prawn Salt & Pepper <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Prawn Golden Fried <i class="nonveg"></i></span><b>₹180</b></div>
+    <div><span>Chicken Roast <i class="nonveg"></i></span><b>₹170</b></div>
+    <div><span>Chicken Ghee Fry <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Chicken Bullet <i class="nonveg"></i></span><b>₹250</b></div>
+    <div><span>Chicken Mexican <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Chicken Crispy <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Chicken Manchurian <i class="nonveg"></i></span><b>₹170</b></div>
+  </div>
+</section>
+
+<section class="menu card" id="main-course">
+  <div class="menu-heading"><small>MAIN COURSE</small><h2>Veg & Non-Veg</h2></div>
+  <h3 class="subheading">Main Course Veg</h3>
+  <div class="items">
+    <div><span>Paneer Tikka Masala <i class="veg"></i></span><b>₹250</b></div>
+    <div><span>Paneer Masala <i class="veg"></i></span><b>₹120</b></div>
+    <div><span>Paneer Varta <i class="veg"></i></span><b>₹130</b></div>
+    <div><span>Paneer Butter Masala <i class="veg"></i></span><b>₹140</b></div>
+    <div><span>Paneer Kadhai <i class="veg"></i></span><b>₹250</b></div>
+    <div><span>Paneer Hyderabadi <i class="veg"></i></span><b>₹140</b></div>
+    <div><span>Paneer Punjabi <i class="veg"></i></span><b>₹140</b></div>
+    <div><span>Paneer Patiala <i class="veg"></i></span><b>₹220</b></div>
+    <div><span>Paneer Hariyali <i class="veg"></i></span><b>₹220</b></div>
+    <div><span>Paneer Hungama <i class="veg"></i></span><b>₹220</b></div>
+    <div><span>Paneer Kalivada <i class="veg"></i></span><b>₹220</b></div>
+    <div><span>Stuff Tomato <i class="veg"></i></span><b>₹150</b></div>
+    <div><span>Stuff Capsicum <i class="veg"></i></span><b>₹150</b></div>
+    <div><span>Mushroom Masala <i class="veg"></i></span><b>₹120</b></div>
+    <div><span>Mushroom Kadhai <i class="veg"></i></span><b>₹230</b></div>
+    <div><span>Mushroom Do Pyaza <i class="veg"></i></span><b>₹130</b></div>
+    <div><span>Chana Masala <i class="veg"></i></span><b>₹90</b></div>
+    <div><span>Dal Fry <i class="veg"></i></span><b>₹80</b></div>
+    <div><span>Dal Tadka <i class="veg"></i></span><b>₹80</b></div>
+    <div><span>Mixed Veg <i class="veg"></i></span><b>₹110</b></div>
+    <div><span>Veg Korma <i class="veg"></i></span><b>₹140</b></div>
+    <div><span>Malai Kofta <i class="veg"></i></span><b>₹170</b></div>
+    <div><span>Veg Kofta <i class="veg"></i></span><b>₹160</b></div>
+    <div><span>Veg Kadhai <i class="veg"></i></span><b>₹200</b></div>
+    <div><span>Veg Bhuna <i class="veg"></i></span><b>₹200</b></div>
+    <div><span>Veg Sham Savera <i class="veg"></i></span><b>₹200</b></div>
+    <div><span>Veg A9 Special <i class="veg"></i></span><b>₹280</b></div>
+  </div>
+  <h3 class="subheading">Main Course Non-Veg</h3>
+  <div class="items">
+    <div><span>Chicken Lotpot <i class="nonveg"></i></span><b>₹100</b></div>
+    <div><span>Chicken Kassa <i class="nonveg"></i></span><b>₹100</b></div>
+    <div><span>Chicken Masala <i class="nonveg"></i></span><b>₹120</b></div>
+    <div><span>Chicken Butter Masala <i class="nonveg"></i></span><b>₹160</b></div>
+    <div><span>Chicken Patiala <i class="nonveg"></i></span><b>₹250</b></div>
+    <div><span>Chicken Murgh Musallam <i class="nonveg"></i></span><b>₹450</b></div>
+    <div><span>Chicken Mughlai <i class="nonveg"></i></span><b>₹250</b></div>
+    <div><span>Chicken Keema Masala <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Chicken Handi <i class="nonveg"></i></span><b>₹300</b></div>
+    <div><span>Desi Chicken Handi <i class="nonveg"></i></span><b>₹500</b></div>
+    <div><span>Mutton Kassa <i class="nonveg"></i></span><b>₹170</b></div>
+    <div><span>Mutton Do Pyaza <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Mutton Mughlai <i class="nonveg"></i></span><b>₹280</b></div>
+    <div><span>Mutton Handi <i class="nonveg"></i></span><b>₹500</b></div>
+    <div><span>Prawn Masala <i class="nonveg"></i></span><b>₹180</b></div>
+    <div><span>Fish Masala/Curry <i class="nonveg"></i></span><b>₹100</b></div>
+    <div><span>Egg Curry <i class="nonveg"></i></span><b>₹80</b></div>
+    <div><span>Egg Tadka <i class="nonveg"></i></span><b>₹90</b></div>
+    <div><span>Butter Omlet <i class="nonveg"></i></span><b>₹60</b></div>
+  </div>
+</section>
+
+<section class="photo-banner">
+  <img src="assets/tandoor.jpg" alt="Tandoor dishes">
+  <div><small>FROM OUR KITCHEN</small><h2>Fresh from the Tandoor</h2><p>Ask our team for today's recommendation.</p></div>
+</section>
+
+<section class="menu card" id="tandoor">
+  <div class="menu-heading"><small>CLAY OVEN SPECIALS</small><h2>Tandoor</h2></div>
+  <div class="items">
+    <div><span>Prawn Tikka <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Paneer Tikka <i class="veg"></i></span><b>₹180</b></div>
+    <div><span>Chicken Tikka <i class="nonveg"></i></span><b>₹180</b></div>
+    <div><span>Chicken Tandoori Half <i class="nonveg"></i></span><b>₹220</b></div>
+    <div><span>Chicken Tandoori Full <i class="nonveg"></i></span><b>₹400</b></div>
+    <div><span>Chicken Pahadi Kabab <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Chicken Seekh Kabab <i class="nonveg"></i></span><b>₹220</b></div>
+    <div><span>Chicken Banjara Kabab <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Chicken Achari Kabab <i class="nonveg"></i></span><b>₹200</b></div>
+    <div><span>Chicken Tangri Kabab <i class="nonveg"></i></span><b>₹240</b></div>
+  </div>
+</section>
+
+<section class="menu card" id="rice">
+  <div class="menu-heading"><small>RICE & BIRYANI</small><h2>Rice & Biriyani</h2></div>
+  <div class="items">
+    <div><span>Veg Biriyani <i class="veg"></i></span><b>₹150</b></div>
+    <div><span>Chicken Biriyani <i class="nonveg"></i></span><b>₹160</b></div>
+    <div><span>Mutton Biriyani <i class="nonveg"></i></span><b>₹220</b></div>
+    <div><span>Plain Rice <i class="veg"></i></span><b>₹40</b></div>
+    <div><span>Jeera Rice <i class="veg"></i></span><b>₹60</b></div>
+    <div><span>Special Nonveg Biriyani <i class="nonveg"></i></span><b>₹300</b></div>
+    <div><span>Lemon Rice <i class="veg"></i></span><b>₹70</b></div>
+    <div><span>Mixed Fried Rice <i class="veg"></i></span><b>₹160</b></div>
+    <div><span>Veg Fried Rice <i class="veg"></i></span><b>₹120</b></div>
+    <div><span>Chicken Fried Rice <i class="nonveg"></i></span><b>₹150</b></div>
+    <div><span>Masala Rice <i class="veg"></i></span><b>₹70</b></div>
+    <div><span>Chicken Schezwan Fried Rice <i class="nonveg"></i></span><b>₹170</b></div>
+    <div><span>Schezwan Fried Rice <i class="veg"></i></span><b>₹140</b></div>
+  </div>
+</section>
+
+<section class="menu card" id="beverages">
+  <div class="menu-heading"><small>DRINKS</small><h2>Beverages</h2></div>
+  <div class="items">
+    <div><span>Sweet</span><b>₹20</b></div><div><span>Ice Cream</span><b>M.R.P</b></div>
+    <div><span>Lassi</span><b>₹40</b></div><div><span>Butter Milk</span><b>₹40</b></div>
+    <div><span>Cold Drink</span><b>₹20</b></div><div><span>Masala Cold Drink</span><b>₹30</b></div>
+    <div><span>Masala Soda (Sweet/Salt)</span><b>₹30</b></div><div><span>Tea (Special)</span><b>₹30</b></div>
+    <div><span>Coffee</span><b>₹40</b></div>
+  </div>
+</section>
+
+<footer>
+  <img src="assets/logo.jpg" alt="Ambiance">
+  <p>Good food • Good mood</p>
+</footer>
+
+</main>
+<script>
+document.querySelectorAll("[data-target]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const el = document.getElementById(btn.dataset.target);
+    if (el) el.scrollIntoView({behavior:"smooth", block:"start"});
+  });
+});
+</script>
 </body>
 </html>
