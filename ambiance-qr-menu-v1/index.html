@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ambiance | Digital Menu</title>
+  <meta name="description" content="Ambiance restaurant digital menu">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <img class="logo" src="assets/logo.jpg" alt="Ambiance">
+      <p class="tagline">Digital Menu</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <h1>What would you like today?</h1>
+      <p>Explore our menu and ask our team for today's availability.</p>
+    </section>
+
+    <section class="recommendations" aria-labelledby="recommendations-title">
+      <div class="section-heading">
+        <span class="eyebrow">Restaurant picks</span>
+        <h2 id="recommendations-title">⭐ Recommended</h2>
+      </div>
+
+      <div class="recommendation-grid">
+        <article class="recommendation-card">
+          <div class="badge">⭐ Special</div>
+          <h3>A9 Special Non-veg Thali</h3>
+          <p>Our signature non-veg thali</p>
+          <strong>₹250</strong>
+        </article>
+        <article class="recommendation-card">
+          <div class="badge">🔥 Popular</div>
+          <h3>Chicken Biryani</h3>
+          <p>A classic favourite</p>
+          <strong>₹160</strong>
+        </article>
+        <article class="recommendation-card">
+          <div class="badge">👨‍🍳 Try this</div>
+          <h3>Paneer Tikka Masala</h3>
+          <p>Rich and flavourful</p>
+          <strong>₹250</strong>
+        </article>
+      </div>
+      <p class="sample-note">Recommendation badges are sample data for this prototype and can be changed by the restaurant.</p>
+    </section>
+
+    <nav class="category-nav" aria-label="Menu categories">
+      <button data-target="thali">Thali</button>
+      <button data-target="starters">Starters</button>
+      <button data-target="soups">Soups & Chilly</button>
+      <button data-target="main-veg">Main Course Veg</button>
+      <button data-target="main-nonveg">Main Course Non-Veg</button>
+      <button data-target="noodles">Noodles</button>
+      <button data-target="tandoor">Tandoor</button>
+      <button data-target="breads">Breads</button>
+      <button data-target="rice">Rice & Biryani</button>
+      <button data-target="beverages">Beverages</button>
+    </nav>
+
+    <div id="menu"></div>
+
+    <section class="footer-card">
+      <h2>Need help choosing?</h2>
+      <p>Ask our team for today's recommendation.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
